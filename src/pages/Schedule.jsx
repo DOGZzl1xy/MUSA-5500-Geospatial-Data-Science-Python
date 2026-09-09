@@ -23,8 +23,8 @@ const schedule = [
   { w: 3, date: "9/10/26", topic: "More on Data Visualization and Intro to Vector Data & GeoPandas",
     // single string → auto-map to lab{ww}.html
     lab: [
-      {label: "3.1 More about data visualization" /* href: `${base}labs/week-3-more-data-viz-geodata/week-3-more-data-viz.html` */},
-      {label: "3.2 Intro to GeoPandas and vector data" /* href: `${base}labs/week-3-more-data-viz-geodata/week3-geospatial-data-concepts.html` */}
+      {label: "3.1 More about data visualization", href: `${base}labs/week-3-more-data-viz-geodata/week-3-more-data-viz.html`},
+      {label: "3.2 Intro to GeoPandas and vector data",href: `${base}labs/week-3-more-data-viz-geodata/week3-geospatial-data-concepts.html`}
     ]
   },
   { w: 4, date: "9/17/26", 
