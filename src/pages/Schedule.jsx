@@ -30,8 +30,8 @@ const schedule = [
   { w: 4, date: "9/17/26", 
     topic: "Geospatial data mapping", 
     lab: [
-      {label: "4.1 More about geospatial data mapping" /* href: `${base}labs/week-4-spatial-data-mapping/week-4A-spatial-data-viz.html` */},
-      {label: "4.2 Interactive spatial data visualization" /* href: `${base}labs/week-4-spatial-data-mapping/week-4B-interactive-spatial-data-viz.html` */}
+      {label: "4.1 More about geospatial data mapping", href: `${base}labs/week-4-spatial-data-mapping/week-4A-spatial-data-viz.html`},
+      {label: "4.2 Interactive spatial data visualization", href: `${base}labs/week-4-spatial-data-mapping/week-4B-interactive-spatial-data-viz.html`}
     ]
   },
   { w: 5, date: "9/24/26", topic: "Raster data operations in Python", 
