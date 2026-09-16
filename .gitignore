@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Keep oversized assignment data local
+/public/assignments/data/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv
