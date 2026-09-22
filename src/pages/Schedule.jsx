@@ -36,8 +36,8 @@ const schedule = [
   },
   { w: 5, date: "9/24/26", topic: "Raster data operations in Python", 
     lab: [
-      {label: "5.1 Raster data operations" /* href: `${base}labs/week-5-raster-analysis/week-5A-raster-data.html` */},
-      {label: "5.2 Raster data analysis" /* href: `${base}labs/week-5-raster-analysis/week-5B-raster-analysis.html` */}
+      {label: "5.1 Raster data operations", href: `${base}labs/week-5-raster-analysis/week-5A-raster-data.html`},
+      {label: "5.2 Raster data analysis", href: `${base}labs/week-5-raster-analysis/week-5B-raster-analysis.html`}
     ]
   },
   { w: 6, date: "10/1/26", topic: "Fall break — No class", 
