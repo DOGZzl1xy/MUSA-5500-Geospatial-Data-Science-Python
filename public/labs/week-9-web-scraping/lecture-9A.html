@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The roadmap</title>
+<title>Week 8A: Web scraping</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,12 +66,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="lecture-9A_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="lecture-9A_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="lecture-9A_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="lecture-9A_files/libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="lecture-9A_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
+<link rel="stylesheet" href="lecture-presentation.css">
 </head>
 
 <body>
@@ -79,52 +80,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Lecture outline</h2>
    
   <ul>
-  <li><a href="#today-web-scraping" id="toc-today-web-scraping" class="nav-link active" data-scroll-target="#today-web-scraping"><span class="header-section-number">1</span> Today: web scraping</a></li>
-  <li><a href="#what-is-web-scraping" id="toc-what-is-web-scraping" class="nav-link" data-scroll-target="#what-is-web-scraping"><span class="header-section-number">2</span> What is web scraping?</a></li>
-  <li><a href="#why-is-web-scraping-useful" id="toc-why-is-web-scraping-useful" class="nav-link" data-scroll-target="#why-is-web-scraping-useful"><span class="header-section-number">3</span> Why is web scraping useful?</a></li>
-  <li><a href="#what-is-possible-11-million-rental-listings-from-craigslist" id="toc-what-is-possible-11-million-rental-listings-from-craigslist" class="nav-link" data-scroll-target="#what-is-possible-11-million-rental-listings-from-craigslist"><span class="header-section-number">4</span> What is possible: 11 million rental listings from Craigslist</a></li>
-  <li><a href="#why-isnt-web-scraping-incredibly-popular" id="toc-why-isnt-web-scraping-incredibly-popular" class="nav-link" data-scroll-target="#why-isnt-web-scraping-incredibly-popular"><span class="header-section-number">5</span> Why isn’t web scraping incredibly popular?</a></li>
-  <li><a href="#legal-concerns" id="toc-legal-concerns" class="nav-link" data-scroll-target="#legal-concerns"><span class="header-section-number">6</span> Legal concerns</a></li>
-  <li><a href="#two-types-of-legal-issues" id="toc-two-types-of-legal-issues" class="nav-link" data-scroll-target="#two-types-of-legal-issues"><span class="header-section-number">7</span> Two types of legal issues</a></li>
-  <li><a href="#web-scraping-public-sites-is-legal" id="toc-web-scraping-public-sites-is-legal" class="nav-link" data-scroll-target="#web-scraping-public-sites-is-legal"><span class="header-section-number">8</span> Web scraping public sites is legal</a></li>
-  <li><a href="#some-more-problematic-use-cases" id="toc-some-more-problematic-use-cases" class="nav-link" data-scroll-target="#some-more-problematic-use-cases"><span class="header-section-number">9</span> Some more problematic use cases</a></li>
-  <li><a href="#when-is-web-scraping-probably-okay" id="toc-when-is-web-scraping-probably-okay" class="nav-link" data-scroll-target="#when-is-web-scraping-probably-okay"><span class="header-section-number">10</span> When is web scraping probably okay?</a></li>
-  <li><a href="#when-is-it-less-likely-to-be-okay" id="toc-when-is-it-less-likely-to-be-okay" class="nav-link" data-scroll-target="#when-is-it-less-likely-to-be-okay"><span class="header-section-number">11</span> When is it less likely to be okay?</a></li>
-  <li><a href="#a-primer-on-web-definitions" id="toc-a-primer-on-web-definitions" class="nav-link" data-scroll-target="#a-primer-on-web-definitions"><span class="header-section-number">12</span> A primer on Web definitions</a></li>
-  <li><a href="#html-hypertext-markup-language" id="toc-html-hypertext-markup-language" class="nav-link" data-scroll-target="#html-hypertext-markup-language"><span class="header-section-number">13</span> 1. HTML: HyperText Markup Language</a>
+  <li><a href="#course-roadmap" id="toc-course-roadmap" class="nav-link active" data-scroll-target="#course-roadmap">Course roadmap</a></li>
+  <li><a href="#week-8a-agenda-web-scraping" id="toc-week-8a-agenda-web-scraping" class="nav-link" data-scroll-target="#week-8a-agenda-web-scraping">Week 8A agenda: web scraping</a></li>
+  <li><a href="#part-1-why-scrape-the-web" id="toc-part-1-why-scrape-the-web" class="nav-link" data-scroll-target="#part-1-why-scrape-the-web">Part 1: Why scrape the web?</a>
   <ul class="collapse">
-  <li><a href="#html-tags" id="toc-html-tags" class="nav-link" data-scroll-target="#html-tags"><span class="header-section-number">13.1</span> HTML tags</a></li>
-  <li><a href="#jupyter-notebooks-can-render-html" id="toc-jupyter-notebooks-can-render-html" class="nav-link" data-scroll-target="#jupyter-notebooks-can-render-html"><span class="header-section-number">13.2</span> Jupyter notebooks can render HTML</a></li>
-  <li><a href="#elements-tags-and-attributes" id="toc-elements-tags-and-attributes" class="nav-link" data-scroll-target="#elements-tags-and-attributes"><span class="header-section-number">13.3</span> Elements, tags, and attributes</a></li>
-  <li><a href="#some-attributes-have-special-meaning" id="toc-some-attributes-have-special-meaning" class="nav-link" data-scroll-target="#some-attributes-have-special-meaning"><span class="header-section-number">13.4</span> Some attributes have special meaning</a></li>
+  <li><a href="#what-is-web-scraping" id="toc-what-is-web-scraping" class="nav-link" data-scroll-target="#what-is-web-scraping">What is web scraping?</a></li>
+  <li><a href="#why-is-web-scraping-useful" id="toc-why-is-web-scraping-useful" class="nav-link" data-scroll-target="#why-is-web-scraping-useful">Why is web scraping useful?</a></li>
+  <li><a href="#example-11-million-craigslist-rental-listings" id="toc-example-11-million-craigslist-rental-listings" class="nav-link" data-scroll-target="#example-11-million-craigslist-rental-listings">Example: 11 million Craigslist rental listings</a></li>
+  <li><a href="#challenges-of-web-scraping" id="toc-challenges-of-web-scraping" class="nav-link" data-scroll-target="#challenges-of-web-scraping">Challenges of web scraping</a></li>
   </ul></li>
-  <li><a href="#css-cascading-stylesheets" id="toc-css-cascading-stylesheets" class="nav-link" data-scroll-target="#css-cascading-stylesheets"><span class="header-section-number">14</span> 2. CSS: Cascading Stylesheets</a>
+  <li><a href="#part-2-responsible-scraping" id="toc-part-2-responsible-scraping" class="nav-link" data-scroll-target="#part-2-responsible-scraping">Part 2: Responsible scraping</a>
   <ul class="collapse">
-  <li><a href="#basic-web-selectors" id="toc-basic-web-selectors" class="nav-link" data-scroll-target="#basic-web-selectors"><span class="header-section-number">14.1</span> Basic Web selectors</a></li>
+  <li><a href="#legal-concerns" id="toc-legal-concerns" class="nav-link" data-scroll-target="#legal-concerns">Legal concerns</a></li>
+  <li><a href="#two-types-of-legal-issues" id="toc-two-types-of-legal-issues" class="nav-link" data-scroll-target="#two-types-of-legal-issues">Two types of legal issues</a></li>
+  <li><a href="#public-site-scraping-the-linkedin-case" id="toc-public-site-scraping-the-linkedin-case" class="nav-link" data-scroll-target="#public-site-scraping-the-linkedin-case">Public-site scraping: the LinkedIn case</a></li>
+  <li><a href="#problematic-use-cases" id="toc-problematic-use-cases" class="nav-link" data-scroll-target="#problematic-use-cases">Problematic use cases</a></li>
+  <li><a href="#when-is-scraping-more-likely-to-be-appropriate" id="toc-when-is-scraping-more-likely-to-be-appropriate" class="nav-link" data-scroll-target="#when-is-scraping-more-likely-to-be-appropriate">When is scraping more likely to be appropriate?</a></li>
+  <li><a href="#when-is-scraping-less-likely-to-be-appropriate" id="toc-when-is-scraping-less-likely-to-be-appropriate" class="nav-link" data-scroll-target="#when-is-scraping-less-likely-to-be-appropriate">When is scraping less likely to be appropriate?</a></li>
   </ul></li>
-  <li><a href="#the-dom-document-object-model" id="toc-the-dom-document-object-model" class="nav-link" data-scroll-target="#the-dom-document-object-model"><span class="header-section-number">15</span> 3. The DOM: Document Object Model</a>
+  <li><a href="#part-3-web-fundamentals" id="toc-part-3-web-fundamentals" class="nav-link" data-scroll-target="#part-3-web-fundamentals">Part 3: Web fundamentals</a>
   <ul class="collapse">
-  <li><a href="#inspecting-a-webpage" id="toc-inspecting-a-webpage" class="nav-link" data-scroll-target="#inspecting-a-webpage"><span class="header-section-number">15.1</span> Inspecting a webpage</a></li>
-  <li><a href="#the-elements-tab" id="toc-the-elements-tab" class="nav-link" data-scroll-target="#the-elements-tab"><span class="header-section-number">15.2</span> The Elements tab</a></li>
-  <li><a href="#the-network-tab-or-web-scraping-the-easy-way" id="toc-the-network-tab-or-web-scraping-the-easy-way" class="nav-link" data-scroll-target="#the-network-tab-or-web-scraping-the-easy-way"><span class="header-section-number">15.3</span> The Network tab, or web scraping the easy way</a></li>
+  <li><a href="#html-hypertext-markup-language" id="toc-html-hypertext-markup-language" class="nav-link" data-scroll-target="#html-hypertext-markup-language">HTML: HyperText Markup Language</a></li>
+  <li><a href="#css-cascading-style-sheets" id="toc-css-cascading-style-sheets" class="nav-link" data-scroll-target="#css-cascading-style-sheets">CSS: Cascading Style Sheets</a></li>
+  <li><a href="#the-dom-document-object-model" id="toc-the-dom-document-object-model" class="nav-link" data-scroll-target="#the-dom-document-object-model">The DOM: Document Object Model</a></li>
   </ul></li>
-  <li><a href="#web-scraping-demo-philadelphia-health-inspections" id="toc-web-scraping-demo-philadelphia-health-inspections" class="nav-link" data-scroll-target="#web-scraping-demo-philadelphia-health-inspections"><span class="header-section-number">16</span> Web scraping demo: Philadelphia Health Inspections</a>
+  <li><a href="#part-4-inspecting-webpages-with-browser-tools" id="toc-part-4-inspecting-webpages-with-browser-tools" class="nav-link" data-scroll-target="#part-4-inspecting-webpages-with-browser-tools">Part 4: Inspecting webpages with browser tools</a>
   <ul class="collapse">
-  <li><a href="#getting-the-html-content" id="toc-getting-the-html-content" class="nav-link" data-scroll-target="#getting-the-html-content"><span class="header-section-number">16.1</span> Getting the HTML content</a></li>
-  <li><a href="#beautifulsoup-makes-this-much-more-manageable" id="toc-beautifulsoup-makes-this-much-more-manageable" class="nav-link" data-scroll-target="#beautifulsoup-makes-this-much-more-manageable"><span class="header-section-number">16.2</span> BeautifulSoup makes this much more manageable</a></li>
-  <li><a href="#making-the-html-pretty" id="toc-making-the-html-pretty" class="nav-link" data-scroll-target="#making-the-html-pretty"><span class="header-section-number">16.3</span> Making the HTML “pretty”</a></li>
-  <li><a href="#how-to-extract-the-content-we-want" id="toc-how-to-extract-the-content-we-want" class="nav-link" data-scroll-target="#how-to-extract-the-content-we-want"><span class="header-section-number">16.4</span> How to extract the content we want?</a></li>
-  <li><a href="#to-the-web-inspector" id="toc-to-the-web-inspector" class="nav-link" data-scroll-target="#to-the-web-inspector"><span class="header-section-number">16.5</span> To the Web Inspector!</a></li>
-  <li><a href="#lets-select-the-first-row" id="toc-lets-select-the-first-row" class="nav-link" data-scroll-target="#lets-select-the-first-row"><span class="header-section-number">16.6</span> Let’s select the first row</a></li>
-  <li><a href="#but-we-need-all-of-the-rows" id="toc-but-we-need-all-of-the-rows" class="nav-link" data-scroll-target="#but-we-need-all-of-the-rows"><span class="header-section-number">16.7</span> But we need all of the rows!</a></li>
-  <li><a href="#now-lets-extract-out-the-content-from-each-row" id="toc-now-lets-extract-out-the-content-from-each-row" class="nav-link" data-scroll-target="#now-lets-extract-out-the-content-from-each-row"><span class="header-section-number">16.8</span> Now, let’s extract out the content from each row</a></li>
-  <li><a href="#putting-it-all-together" id="toc-putting-it-all-together" class="nav-link" data-scroll-target="#putting-it-all-together"><span class="header-section-number">16.9</span> Putting it all together</a></li>
-  <li><a href="#see-any-restaurants-you-recognize" id="toc-see-any-restaurants-you-recognize" class="nav-link" data-scroll-target="#see-any-restaurants-you-recognize"><span class="header-section-number">16.10</span> See any restaurants you recognize?</a></li>
+  <li><a href="#opening-the-web-inspector" id="toc-opening-the-web-inspector" class="nav-link" data-scroll-target="#opening-the-web-inspector">Opening the Web Inspector</a></li>
+  <li><a href="#the-elements-tab" id="toc-the-elements-tab" class="nav-link" data-scroll-target="#the-elements-tab">The Elements tab</a></li>
+  <li><a href="#the-network-tab-finding-data-sources" id="toc-the-network-tab-finding-data-sources" class="nav-link" data-scroll-target="#the-network-tab-finding-data-sources">The Network tab: finding data sources</a></li>
   </ul></li>
-  <li><a href="#thats-it" id="toc-thats-it" class="nav-link" data-scroll-target="#thats-it"><span class="header-section-number">17</span> That’s it!</a></li>
+  <li><a href="#part-5-guided-demo-philadelphia-health-inspections" id="toc-part-5-guided-demo-philadelphia-health-inspections" class="nav-link" data-scroll-target="#part-5-guided-demo-philadelphia-health-inspections">Part 5: Guided demo — Philadelphia health inspections</a>
+  <ul class="collapse">
+  <li><a href="#step-1-request-the-html" id="toc-step-1-request-the-html" class="nav-link" data-scroll-target="#step-1-request-the-html">Step 1: Request the HTML</a></li>
+  <li><a href="#step-2-parse-the-html-with-beautifulsoup" id="toc-step-2-parse-the-html-with-beautifulsoup" class="nav-link" data-scroll-target="#step-2-parse-the-html-with-beautifulsoup">Step 2: Parse the HTML with BeautifulSoup</a></li>
+  <li><a href="#step-3-select-the-content-we-need" id="toc-step-3-select-the-content-we-need" class="nav-link" data-scroll-target="#step-3-select-the-content-we-need">Step 3: Select the content we need</a></li>
+  <li><a href="#step-4-select-all-inspection-rows" id="toc-step-4-select-all-inspection-rows" class="nav-link" data-scroll-target="#step-4-select-all-inspection-rows">Step 4: Select all inspection rows</a></li>
+  <li><a href="#step-5-extract-fields-from-each-row" id="toc-step-5-extract-fields-from-each-row" class="nav-link" data-scroll-target="#step-5-extract-fields-from-each-row">Step 5: Extract fields from each row</a></li>
+  <li><a href="#step-6-build-a-dataframe" id="toc-step-6-build-a-dataframe" class="nav-link" data-scroll-target="#step-6-build-a-dataframe">Step 6: Build a DataFrame</a></li>
+  </ul></li>
+  <li><a href="#wrap-up-and-next-steps" id="toc-wrap-up-and-next-steps" class="nav-link" data-scroll-target="#wrap-up-and-next-steps">Wrap-up and next steps</a></li>
   </ul>
 </nav>
 </div>
@@ -134,7 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The roadmap</h1>
+<h1 class="title">Week 8A: Web scraping</h1>
 </div>
 
 
@@ -151,12 +149,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="cell-1" class="cell" data-tags="[]" data-execution_count="1">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
+<p>Learn to inspect a webpage, select HTML elements, and organize scraped records in a DataFrame.</p>
+<p><strong>Lecture guide:</strong> Why scrape? → Responsible scraping → Web fundamentals → Browser inspection → Guided demo</p>
+<section id="course-roadmap" class="level2">
+<h2 class="anchored" data-anchor-id="course-roadmap">Course roadmap</h2>
 <p>Moving in to our “getting data” modules</p>
 <ul>
 <li>Today: web scraping</li>
@@ -164,8 +160,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Then: vibe coding for website development, GitHub page hosting, machine learning</li>
 </ul>
 <p>The final project will ask you to combine several of these topics/techniques to analyze a data sets and produce a web-based data visualization</p>
-<section id="today-web-scraping" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="today-web-scraping"><span class="header-section-number">1</span> Today: web scraping</h2>
+</section>
+<section id="week-8a-agenda-web-scraping" class="level2">
+<h2 class="anchored" data-anchor-id="week-8a-agenda-web-scraping">Week 8A agenda: web scraping</h2>
 <ul>
 <li>Why web scraping?</li>
 <li>Getting familiar with the Web</li>
@@ -173,27 +170,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>How to deal with dynamic content</li>
 </ul>
 </section>
-<section id="what-is-web-scraping" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="what-is-web-scraping"><span class="header-section-number">2</span> What is web scraping?</h2>
+<section id="part-1-why-scrape-the-web" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-why-scrape-the-web">Part 1: Why scrape the web?</h2>
+<section id="what-is-web-scraping" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-web-scraping">What is web scraping?</h3>
 <p>Using software to gather and extract data/content from websites</p>
 </section>
-<section id="why-is-web-scraping-useful" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="why-is-web-scraping-useful"><span class="header-section-number">3</span> Why is web scraping useful?</h2>
+<section id="why-is-web-scraping-useful" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-web-scraping-useful">Why is web scraping useful?</h3>
 <ul>
 <li>Not every data source provides an API</li>
 <li>The Web contains <strong>a lot</strong> of information</li>
 <li>Unique data sources that may not be available elsewhere</li>
 </ul>
 </section>
-<section id="what-is-possible-11-million-rental-listings-from-craigslist" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="what-is-possible-11-million-rental-listings-from-craigslist"><span class="header-section-number">4</span> What is possible: 11 million rental listings from Craigslist</h2>
+<section id="example-11-million-craigslist-rental-listings" class="level3">
+<h3 class="anchored" data-anchor-id="example-11-million-craigslist-rental-listings">Example: 11 million Craigslist rental listings</h3>
 <center>
 <img src="imgs/scraping-craigslist.jpeg" width="700">
 </center>
 <p><a href="https://geoffboeing.com/2016/08/craigslist-rental-housing-insights/">Source: Geoff Boeing</a></p>
 </section>
-<section id="why-isnt-web-scraping-incredibly-popular" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="why-isnt-web-scraping-incredibly-popular"><span class="header-section-number">5</span> Why isn’t web scraping incredibly popular?</h2>
+<section id="challenges-of-web-scraping" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-of-web-scraping">Challenges of web scraping</h3>
 <ul>
 <li>It can be time consuming and difficult to extract large volumes</li>
 <li>You are at the mercy of website maintainers —&nbsp;if the website structure changes, your code breaks</li>
@@ -203,15 +202,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="imgs/google-search.png" width="700">
 </center>
 </section>
-<section id="legal-concerns" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="legal-concerns"><span class="header-section-number">6</span> Legal concerns</h2>
+</section>
+<section id="part-2-responsible-scraping" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-responsible-scraping">Part 2: Responsible scraping</h2>
+<section id="legal-concerns" class="level3">
+<h3 class="anchored" data-anchor-id="legal-concerns">Legal concerns</h3>
 <p>RadPad scraped the entirety of Craiglist, Craigslist sued RadPad, and they were <a href="http://labusinessjournal.com/news/2017/apr/14/radpad-ordered-pay-605-million-judgment-craigslist/">awarded $60 million</a></p>
 <center>
 <img src="imgs/radpad.png" width="500">
 </center>
 </section>
-<section id="two-types-of-legal-issues" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="two-types-of-legal-issues"><span class="header-section-number">7</span> Two types of legal issues</h2>
+<section id="two-types-of-legal-issues" class="level3">
+<h3 class="anchored" data-anchor-id="two-types-of-legal-issues">Two types of legal issues</h3>
 <ol type="1">
 <li>Copyright infringement
 <ul>
@@ -225,23 +227,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ol>
 </section>
-<section id="web-scraping-public-sites-is-legal" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="web-scraping-public-sites-is-legal"><span class="header-section-number">8</span> Web scraping public sites is legal</h2>
+<section id="public-site-scraping-the-linkedin-case" class="level3">
+<h3 class="anchored" data-anchor-id="public-site-scraping-the-linkedin-case">Public-site scraping: the LinkedIn case</h3>
 <ul>
 <li>Ruling from 2022 said that scraping data that is publicly accessible on the internet is not a violation of the Computer Fraud and Abuse Act</li>
 <li>Linkedin had sued a competitor for scraping publicly available information from user profiles</li>
 </ul>
 <p><a href="https://techcrunch.com/2022/04/18/web-scraping-legal-court/">More info on the case</a></p>
 </section>
-<section id="some-more-problematic-use-cases" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="some-more-problematic-use-cases"><span class="header-section-number">9</span> Some more problematic use cases</h2>
+<section id="problematic-use-cases" class="level3">
+<h3 class="anchored" data-anchor-id="problematic-use-cases">Problematic use cases</h3>
 <ul>
 <li>The facial recognition startup Clearview AI scraped billions of photos from social media websites. They <a href="https://www.mediapost.com/publications/article/389525/facial-recognition-company-clearview-settles-priva.html">recently settled</a> a class action lawsuit that alleged they violated privacy laws</li>
 <li>Web scraping at a massive scale has been a key ingredient in generating the training datasets for generative AI models like ChatGPT. Companies like OpenAI and Meta <a href="https://apnews.com/article/openai-lawsuit-authors-grisham-george-rr-martin-37f9073ab67ab25b7e6b2975b2a63bfe">have been sued</a> by authors and other content creators for violating copyright laws.</li>
 </ul>
 </section>
-<section id="when-is-web-scraping-probably-okay" class="level2" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="when-is-web-scraping-probably-okay"><span class="header-section-number">10</span> When is web scraping probably okay?</h2>
+<section id="when-is-scraping-more-likely-to-be-appropriate" class="level3">
+<h3 class="anchored" data-anchor-id="when-is-scraping-more-likely-to-be-appropriate">When is scraping more likely to be appropriate?</h3>
 <ul>
 <li>.gov sites and, to a lesser degree, .edu sites</li>
 <li>Website owner has no business reason to protect the information</li>
@@ -251,8 +253,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Done at night, when web traffic is low</li>
 </ul>
 </section>
-<section id="when-is-it-less-likely-to-be-okay" class="level2" data-number="11">
-<h2 data-number="11" class="anchored" data-anchor-id="when-is-it-less-likely-to-be-okay"><span class="header-section-number">11</span> When is it less likely to be okay?</h2>
+<section id="when-is-scraping-less-likely-to-be-appropriate" class="level3">
+<h3 class="anchored" data-anchor-id="when-is-scraping-less-likely-to-be-appropriate">When is scraping less likely to be appropriate?</h3>
 <ul>
 <li>search engines</li>
 <li>E-commerce sites (e.g.&nbsp;Zillow, Expedia, Amazon)</li>
@@ -263,24 +265,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p><strong>With that being said, let’s do some web scraping…</strong></p>
 </section>
-<section id="a-primer-on-web-definitions" class="level2" data-number="12">
-<h2 data-number="12" class="anchored" data-anchor-id="a-primer-on-web-definitions"><span class="header-section-number">12</span> A primer on Web definitions</h2>
+</section>
+<section id="part-3-web-fundamentals" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-web-fundamentals">Part 3: Web fundamentals</h2>
 <p>So many acronyms:</p>
 <ul>
 <li>HTML</li>
 <li>The DOM</li>
 <li>CSS</li>
 </ul>
-</section>
-<section id="html-hypertext-markup-language" class="level2" data-number="13">
-<h2 data-number="13" class="anchored" data-anchor-id="html-hypertext-markup-language"><span class="header-section-number">13</span> 1. HTML: HyperText Markup Language</h2>
+<section id="html-hypertext-markup-language" class="level3">
+<h3 class="anchored" data-anchor-id="html-hypertext-markup-language">HTML: HyperText Markup Language</h3>
 <ul>
 <li>The language most websites are written in</li>
 <li>The browser knows how to read this language and renders the output for you</li>
 <li>HTML is what a web crawler will see</li>
 </ul>
-<section id="html-tags" class="level3" data-number="13.1">
-<h3 data-number="13.1" class="anchored" data-anchor-id="html-tags"><span class="header-section-number">13.1</span> HTML tags</h3>
+<section id="html-tags" class="level4">
+<h4 class="anchored" data-anchor-id="html-tags">HTML tags</h4>
 <ul>
 <li>There are a standard set of tags to define the different structural components of a webpage</li>
 <li>For example:
@@ -291,25 +293,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 </section>
-<section id="jupyter-notebooks-can-render-html" class="level3" data-number="13.2">
-<h3 data-number="13.2" class="anchored" data-anchor-id="jupyter-notebooks-can-render-html"><span class="header-section-number">13.2</span> Jupyter notebooks can render HTML</h3>
+<section id="rendering-html-in-jupyter" class="level4">
+<h4 class="anchored">Rendering HTML in Jupyter</h4>
 <p>Use the <code>%%html</code> magic cell command</p>
-<div id="cell-20" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="2">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>html</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>html<span class="op">&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>head<span class="op">&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>title<span class="op">&gt;</span>TITLE GOES HERE<span class="op">&lt;/</span>title<span class="op">&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;/</span>head<span class="op">&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>body<span class="op">&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>h3<span class="op">&gt;</span>MAIN CONTENT GOES IN THE BODY TAG<span class="op">&lt;/</span>h3<span class="op">&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>p<span class="op">&gt;</span>This <span class="kw">is</span> a paragraph tag<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>p<span class="op">&gt;</span>This <span class="kw">is</span> a second paragraph tag<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;/</span>body<span class="op">&gt;</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>html<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-21" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>html</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>html<span class="op">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>head<span class="op">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>title<span class="op">&gt;</span>TITLE GOES HERE<span class="op">&lt;/</span>title<span class="op">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;/</span>head<span class="op">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>body<span class="op">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>h3<span class="op">&gt;</span>MAIN CONTENT GOES IN THE BODY TAG<span class="op">&lt;/</span>h3<span class="op">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>p<span class="op">&gt;</span>This <span class="kw">is</span> a paragraph tag<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>p<span class="op">&gt;</span>This <span class="kw">is</span> a second paragraph tag<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;/</span>body<span class="op">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>html<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 
@@ -317,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <title>TITLE GOES HERE</title>
   
   
-    <h3 class="anchored">MAIN CONTENT GOES IN THE BODY TAG</h3>
+    <h3 class="anchored" data-anchor-id="rendering-html-in-jupyter">MAIN CONTENT GOES IN THE BODY TAG</h3>
     <p>This is a paragraph tag</p>
     <p>This is a second paragraph tag</p>
   
@@ -325,16 +324,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="elements-tags-and-attributes" class="level3" data-number="13.3">
-<h3 data-number="13.3" class="anchored" data-anchor-id="elements-tags-and-attributes"><span class="header-section-number">13.3</span> Elements, tags, and attributes</h3>
+<section id="elements-tags-and-attributes" class="level4">
+<h4 class="anchored" data-anchor-id="elements-tags-and-attributes">Elements, tags, and attributes</h4>
 <p>Learning the notation:</p>
-<div id="cell-22" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="3">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>html</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>a <span class="bu">id</span><span class="op">=</span><span class="st">"my-link"</span> style<span class="op">=</span><span class="st">"color: orange;"</span> href<span class="op">=</span><span class="st">"https://www.design.upenn.edu"</span> target<span class="op">=</span><span class="st">"blank_"</span><span class="op">&gt;</span>This <span class="kw">is</span> my link<span class="op">&lt;/</span>a<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-23" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>html</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>a <span class="bu">id</span><span class="op">=</span><span class="st">"my-link"</span> style<span class="op">=</span><span class="st">"color: orange;"</span> href<span class="op">=</span><span class="st">"https://www.design.upenn.edu"</span> target<span class="op">=</span><span class="st">"blank_"</span><span class="op">&gt;</span>This <span class="kw">is</span> my link<span class="op">&lt;/</span>a<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <a id="my-link" style="color: orange;" href="https://www.design.upenn.edu" target="blank_">This is my link</a>
@@ -345,8 +341,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>The attributes:</strong></p>
 <p><img src="imgs/atag-3.png" class="img-fluid"></p>
 </section>
-<section id="some-attributes-have-special-meaning" class="level3" data-number="13.4">
-<h3 data-number="13.4" class="anchored" data-anchor-id="some-attributes-have-special-meaning"><span class="header-section-number">13.4</span> Some attributes have special meaning</h3>
+<section id="special-attributes-id-and-class" class="level4">
+<h4 class="anchored" data-anchor-id="special-attributes-id-and-class">Special attributes: id and class</h4>
 <ul>
 <li>In particular: <code>id</code> and <code>class</code></li>
 <li>Allows you to:
@@ -357,8 +353,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 </section>
-<section id="css-cascading-stylesheets" class="level2" data-number="14">
-<h2 data-number="14" class="anchored" data-anchor-id="css-cascading-stylesheets"><span class="header-section-number">14</span> 2. CSS: Cascading Stylesheets</h2>
+<section id="css-cascading-style-sheets" class="level3">
+<h3 class="anchored" data-anchor-id="css-cascading-style-sheets">CSS: Cascading Style Sheets</h3>
 <ul>
 <li>A language for styling HTML pages</li>
 <li>CSS styles (also known as selectors) are applied to HTML tags based on their name, class, or ID.</li>
@@ -366,8 +362,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <center>
 <img src="imgs/css.png" width="1200">
 </center>
-<section id="basic-web-selectors" class="level3" data-number="14.1">
-<h3 data-number="14.1" class="anchored" data-anchor-id="basic-web-selectors"><span class="header-section-number">14.1</span> Basic Web selectors</h3>
+<section id="basic-css-selectors" class="level4">
+<h4 class="anchored" data-anchor-id="basic-css-selectors">Basic CSS selectors</h4>
 <ul>
 <li>Class
 <ul>
@@ -395,163 +391,117 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="https://www.w3schools.com/cssref/css_selectors.asp">https://www.w3schools.com/cssref/css_selectors.asp</a></p>
 </section>
 </section>
-<section id="the-dom-document-object-model" class="level2" data-number="15">
-<h2 data-number="15" class="anchored" data-anchor-id="the-dom-document-object-model"><span class="header-section-number">15</span> 3. The DOM: Document Object Model</h2>
+<section id="the-dom-document-object-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-dom-document-object-model">The DOM: Document Object Model</h3>
 <ul>
 <li>An interactive object tree created from the HTML tag hierarchy on a page</li>
 <li>Created by the browser</li>
 <li>Tracks user interactions</li>
 <li>It is <strong>dynamic</strong>: stores the current state of the webpage</li>
 </ul>
-<section id="inspecting-a-webpage" class="level3" data-number="15.1">
-<h3 data-number="15.1" class="anchored" data-anchor-id="inspecting-a-webpage"><span class="header-section-number">15.1</span> Inspecting a webpage</h3>
+</section>
+</section>
+<section id="part-4-inspecting-webpages-with-browser-tools" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-inspecting-webpages-with-browser-tools">Part 4: Inspecting webpages with browser tools</h2>
+<section id="opening-the-web-inspector" class="level3">
+<h3 class="anchored" data-anchor-id="opening-the-web-inspector">Opening the Web Inspector</h3>
 <ul>
 <li>Modern web browsers provide tools for inspecting the source HTML and DOM of websites</li>
 <li>Also tells you data sources that have been loaded by the page</li>
 <li>This should also be your first step when starting to scrape a page</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><strong>Tip:</strong></p>
 <p>To load the Web Inspector in most modern browsers, you can simply hit the F12 button</p>
-</div>
-</div>
+</blockquote>
 <p><img src="imgs/web-inspector-1.png" class="img-fluid"></p>
 </section>
-<section id="the-elements-tab" class="level3" data-number="15.2">
-<h3 data-number="15.2" class="anchored" data-anchor-id="the-elements-tab"><span class="header-section-number">15.2</span> The Elements tab</h3>
+<section id="the-elements-tab" class="level3">
+<h3 class="anchored" data-anchor-id="the-elements-tab">The Elements tab</h3>
 <ul>
 <li>Allows you to inspect the DOM directly</li>
 <li>The tool that will allow you to identify what data you want to scrape from a website</li>
 </ul>
 <p><img src="imgs/web-inspector-2.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip: Viewing an element’s source code
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Right click on the element you want to view</li>
-<li>Click on “Inspect”</li>
-<li>The element will be highlighted in the DOM (in the Elements tab)</li>
-</ol>
-</div>
-</div>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong></p>
+<p><strong>Tip: Viewing an element’s source code</strong> 1. Right click on the element you want to view 2. Click on “Inspect” 3. The element will be highlighted in the DOM (in the Elements tab)</p>
+</blockquote>
 </section>
-<section id="the-network-tab-or-web-scraping-the-easy-way" class="level3" data-number="15.3">
-<h3 data-number="15.3" class="anchored" data-anchor-id="the-network-tab-or-web-scraping-the-easy-way"><span class="header-section-number">15.3</span> The Network tab, or web scraping the easy way</h3>
+<section id="the-network-tab-finding-data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="the-network-tab-finding-data-sources">The Network tab: finding data sources</h3>
 <p>The network tab tracks all of the content loaded by a website. Many modern websites that use data will “fetch” the data from an external (possibly nonpublic) data source. The Network tab will show you these sources, potentially allowing you to get the data without writing any scraping code at all.</p>
-<section id="the-places-to-look" class="level4" data-number="15.3.1">
-<h4 data-number="15.3.1" class="anchored" data-anchor-id="the-places-to-look"><span class="header-section-number">15.3.1</span> The places to look</h4>
+<section id="the-places-to-look" class="level4">
+<h4 class="anchored" data-anchor-id="the-places-to-look">The places to look</h4>
 <ul>
 <li>The <code>Fetch/XHR</code> filter: all of the external XLM HTTP fetch requests, often used to load external data</li>
 <li>The <code>JS</code> tab: Javascript files loaded by the site, which can sometimes include data</li>
 <li>If you’re looking for GeoJSON data, you’ll want to look for <code>.json</code> files</li>
 </ul>
 </section>
-<section id="example-1-the-prisons-census-in-philadelphia" class="level4" data-number="15.3.2">
-<h4 data-number="15.3.2" class="anchored" data-anchor-id="example-1-the-prisons-census-in-philadelphia"><span class="header-section-number">15.3.2</span> Example 1: <a href="https://www.phila.gov/departments/philadelphia-department-of-prisons/daily-headcount-and-census/">The Prisons Census in Philadelphia</a></h4>
+<section id="example-1-philadelphia-prisons-census" class="level4">
+<h4 class="anchored" data-anchor-id="example-1-philadelphia-prisons-census">Example 1: Philadelphia prisons census</h4>
+<p><a href="https://www.phila.gov/departments/philadelphia-department-of-prisons/daily-headcount-and-census/">Open the example website</a></p>
 <p><img src="imgs/prison-census.png" class="img-fluid"></p>
 </section>
-<section id="example-2-measles-data-from-the-wsj" class="level4" data-number="15.3.3">
-<h4 data-number="15.3.3" class="anchored" data-anchor-id="example-2-measles-data-from-the-wsj"><span class="header-section-number">15.3.3</span> Example 2: <a href="http://graphics.wsj.com/infectious-diseases-and-vaccines/">Measles data from the WSJ</a></h4>
+<section id="example-2-wsj-measles-data" class="level4">
+<h4 class="anchored" data-anchor-id="example-2-wsj-measles-data">Example 2: WSJ measles data</h4>
+<p><a href="http://graphics.wsj.com/infectious-diseases-and-vaccines/">Open the example website</a></p>
 <p><img src="imgs/measles.png" class="img-fluid"></p>
 </section>
-<section id="example-3-philly-311-website" class="level4" data-number="15.3.4">
-<h4 data-number="15.3.4" class="anchored" data-anchor-id="example-3-philly-311-website"><span class="header-section-number">15.3.4</span> Example 3: <a href="https://iframe.publicstuff.com/#?client_id=242">Philly 311 Website</a></h4>
+<section id="example-3-philly-311" class="level4">
+<h4 class="anchored" data-anchor-id="example-3-philly-311">Example 3: Philly 311</h4>
+<p><a href="https://iframe.publicstuff.com/#?client_id=242">Open the example website</a></p>
 <p><img src="imgs/philly-311.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><strong>Tip:</strong></p>
 <p>When using the Network tab, you can right click on the listed entry in the left. Then, you can either select the “Open in new tab” option or the “Copy response” option. This will let you get the desired data into a new window or copied to your clipboard so you can save it to a file.</p>
-</div>
-</div>
+</blockquote>
 </section>
 </section>
 </section>
-<section id="web-scraping-demo-philadelphia-health-inspections" class="level2" data-number="16">
-<h2 data-number="16" class="anchored" data-anchor-id="web-scraping-demo-philadelphia-health-inspections"><span class="header-section-number">16</span> Web scraping demo: Philadelphia Health Inspections</h2>
+<section id="part-5-guided-demo-philadelphia-health-inspections" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-guided-demo-philadelphia-health-inspections">Part 5: Guided demo — Philadelphia health inspections</h2>
 <p>Let’s scrape data for restaurant inspections using the searchable database maintained by the Philadelphia Inquirer, available at: <a href="https://data.inquirer.com/inspections/">https://data.inquirer.com/inspections/</a></p>
 <p><img src="imgs/clean-plates.png" class="img-fluid"></p>
-<section id="getting-the-html-content" class="level3" data-number="16.1">
-<h3 data-number="16.1" class="anchored" data-anchor-id="getting-the-html-content"><span class="header-section-number">16.1</span> Getting the HTML content</h3>
-<p>We’ll use the built-in “requests” module to request the content of the website and load it into Python.</p>
-<div id="cell-44" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="4">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<section id="step-1-request-the-html" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-request-the-html">Step 1: Request the HTML</h3>
+<p>We’ll use the <code>requests</code> package to request the content of the website and load it into Python.</p>
+<div id="cell-46" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Use a “get” request to get the content:</p>
-<div id="cell-46" class="cell" data-scrolled="true" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="5">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://data.inquirer.com/inspections/"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-48" class="cell" data-scrolled="true" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://data.inquirer.com/inspections/"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-47" class="cell" data-tags="[]" data-execution_count="6">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(r)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div id="cell-49" class="cell" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(r)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>requests.models.Response</code></pre>
 </div>
 </div>
-<div id="cell-48" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>r.status_code</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div id="cell-50" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>r.status_code</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>200</code></pre>
 </div>
 </div>
 </section>
-<section id="beautifulsoup-makes-this-much-more-manageable" class="level3" data-number="16.2">
-<h3 data-number="16.2" class="anchored" data-anchor-id="beautifulsoup-makes-this-much-more-manageable"><span class="header-section-number">16.2</span> BeautifulSoup makes this much more manageable</h3>
+<section id="step-2-parse-the-html-with-beautifulsoup" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-parse-the-html-with-beautifulsoup">Step 2: Parse the HTML with BeautifulSoup</h3>
 <p><a href="https://beautiful-soup-4.readthedocs.io/en/latest/">BeautifulSoup</a> makes it much easier to extract out different parts of a website.</p>
-<div id="cell-50" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="8">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-52" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Initialize the “soup” object, using the content of our get request:</p>
-<div id="cell-52" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="9">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>soup <span class="op">=</span> BeautifulSoup(r.content, <span class="st">'html.parser'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-54" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>soup <span class="op">=</span> BeautifulSoup(r.content, <span class="st">'html.parser'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="making-the-html-pretty" class="level3" data-number="16.3">
-<h3 data-number="16.3" class="anchored" data-anchor-id="making-the-html-pretty"><span class="header-section-number">16.3</span> Making the HTML “pretty”</h3>
-<div id="cell-54" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-tags="[]" data-execution_count="10">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(soup.prettify())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<section id="preview-the-html" class="level4">
+<h4 class="anchored" data-anchor-id="preview-the-html">Preview the HTML</h4>
+<div id="cell-56" class="cell" data-scrolled="true" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-tags="[]" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(soup.prettify())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -4445,105 +4395,70 @@ adCount++;
 </div>
 <p>This is what you’ll see if you use the Web Inspector</p>
 </section>
-<section id="how-to-extract-the-content-we-want" class="level3" data-number="16.4">
-<h3 data-number="16.4" class="anchored" data-anchor-id="how-to-extract-the-content-we-want"><span class="header-section-number">16.4</span> How to extract the content we want?</h3>
+</section>
+<section id="step-3-select-the-content-we-need" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-select-the-content-we-need">Step 3: Select the content we need</h3>
 <p><strong>Two important functions</strong></p>
 <ol type="1">
 <li><code>soup.select_one(selector)</code>: finds the first element matching the selector query and returns <strong>one</strong> element</li>
 <li><code>soup.select(selector)</code>: finds <strong>all</strong> elements matching the selector</li>
 </ol>
 <p><strong>Recommended reading:</strong> Note on beautiful soup and css selectors in <a href="https://github.com/xiaojianggis/MUSA-5500-Geospatial-Data-Science-Python/blob/main/public/labs/week-9-web-scraping/css-selectors.md">this week’s repository</a></p>
-</section>
-<section id="to-the-web-inspector" class="level3" data-number="16.5">
-<h3 data-number="16.5" class="anchored" data-anchor-id="to-the-web-inspector"><span class="header-section-number">16.5</span> To the Web Inspector!</h3>
+<section id="inspect-the-page-structure" class="level4">
+<h4 class="anchored" data-anchor-id="inspect-the-page-structure">Inspect the page structure</h4>
 <p>We can use the web inspector to understand the structure of the website and identify the HTML tags that we want to extract content from.</p>
 </section>
-<section id="lets-select-the-first-row" class="level3" data-number="16.6">
-<h3 data-number="16.6" class="anchored" data-anchor-id="lets-select-the-first-row"><span class="header-section-number">16.6</span> Let’s select the first row</h3>
+<section id="select-the-first-inspection-row" class="level4">
+<h4 class="anchored" data-anchor-id="select-the-first-inspection-row">Select the first inspection row</h4>
 <p>Web browsers will let us copy the CSS selector for individual elements.</p>
 <p>Use: <strong>Right Click &gt; Copy &gt; Copy Selector</strong></p>
-<div id="cell-60" class="cell" data-execution_count="11">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>selector <span class="op">=</span> <span class="st">"#inspection_unit_0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-62" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>selector <span class="op">=</span> <span class="st">"#inspection_unit_0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-61" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="12">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the first row</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">NOTE</span><span class="co">: we are using "select_one()" to select only one matching element</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>first_row <span class="op">=</span> soup.select_one(selector)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-63" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the first row</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">NOTE</span><span class="co">: we are using "select_one()" to select only one matching element</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>first_row <span class="op">=</span> soup.select_one(selector)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-62" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="13">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>first_row</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div id="cell-64" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>first_row</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>&lt;div class="inspectionUnit inspectionUnitEven transitionBackground" id="inspection_unit_0"&gt;&lt;a href="https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124"&gt;&lt;div class="inspectionUnitInner"&gt;&lt;div class="inspectionNameWrapper"&gt;&lt;div class="inspectionUnitName transitionAll"&gt;Bamba and Saduty Produce Market&lt;/div&gt;&lt;div class="inspectionUnitDate"&gt;&lt;span class="inspectionUnitDateTitle"&gt;Inspection date:&lt;/span&gt; Apr 18, 2024&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitInfoWrapper"&gt;&lt;div class="inspectionUnitAddress"&gt;4603 FRANKFORD AVE 19124&lt;/div&gt;&lt;div class="inspectionUnitNeigborhood"&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitCountWrapper"&gt;&lt;span class="inspectionCountLabel"&gt;Violations&lt;/span&gt;&lt;li class="inspectionUnitCount inspectionUnitCountFoodborne inspectionUnitCountFirst"&gt;&lt;span class="inspectionCountNumber"&gt;5&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Foodborne Illness Risk Factors&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="inspectionUnitCount inspectionUnitCountRetail"&gt;&lt;span class="inspectionCountNumber"&gt;10&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Lack of Good Retail Practices&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</code></pre>
 </div>
 </div>
 </section>
-<section id="but-we-need-all-of-the-rows" class="level3" data-number="16.7">
-<h3 data-number="16.7" class="anchored" data-anchor-id="but-we-need-all-of-the-rows"><span class="header-section-number">16.7</span> But we need all of the rows!</h3>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+<section id="step-4-select-all-inspection-rows" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-select-all-inspection-rows">Step 4: Select all inspection rows</h3>
+<blockquote class="blockquote">
+<p><strong>Important:</strong></p>
 <p>When you use Copy -&gt; Copy Selector, the copied css selector will only match the specific element you’ve highlighted, no others!</p>
-</div>
-</div>
-<section id="generalizing-your-selectors" class="level4" data-number="16.7.1">
-<h4 data-number="16.7.1" class="anchored" data-anchor-id="generalizing-your-selectors"><span class="header-section-number">16.7.1</span> Generalizing your selectors</h4>
+</blockquote>
+<section id="generalize-the-selector" class="level4">
+<h4 class="anchored" data-anchor-id="generalize-the-selector">Generalize the selector</h4>
 <p>We need to <strong>generalize the selector</strong> to just select all rows from the table, not just the first one. To do this, we’ll need to go back to the web inspector and understand the structure of the website.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><strong>Tip:</strong></p>
 <p>When trying to identify a general selector, try to look for common patterns, like shared class names or id strings, across the tags you want to extract.</p>
-</div>
-</div>
+</blockquote>
 <p>In our case, it looks like the “inspectionUnit” class is shared across all of the row div elements</p>
 <p><img src="imgs/clean-plates-2.png" class="img-fluid"></p>
-<div id="cell-66" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="14">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get all tags with the inspectionUnit class name</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note we are using select() to select ALL elements</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> soup.select(<span class="st">'.inspectionUnit'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-68" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get all tags with the inspectionUnit class name</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note we are using select() to select ALL elements</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> soup.select(<span class="st">'.inspectionUnit'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-67" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="15">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(rows)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="15">
+<div id="cell-69" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(rows)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>50</code></pre>
 </div>
 </div>
-<div id="cell-68" class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="16">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the first row</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> rows[<span class="dv">0</span>]</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(row.prettify())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-70" class="cell" data-scrolled="true" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the first row</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> rows[<span class="dv">0</span>]</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(row.prettify())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;div class="inspectionUnit inspectionUnitEven transitionBackground" id="inspection_unit_0"&gt;
  &lt;a href="https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124"&gt;
@@ -4607,8 +4522,8 @@ Tip
 </div>
 </section>
 </section>
-<section id="now-lets-extract-out-the-content-from-each-row" class="level3" data-number="16.8">
-<h3 data-number="16.8" class="anchored" data-anchor-id="now-lets-extract-out-the-content-from-each-row"><span class="header-section-number">16.8</span> Now, let’s extract out the content from each row</h3>
+<section id="step-5-extract-fields-from-each-row" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-extract-fields-from-each-row">Step 5: Extract fields from each row</h3>
 <p>We’ll look for the following items:</p>
 <ol type="1">
 <li>The link to the full inspection report</li>
@@ -4616,195 +4531,153 @@ Tip
 <li>The restaurant address</li>
 <li>The number of <em>food-borne violations</em></li>
 </ol>
-<section id="the-report-link" class="level4" data-number="16.8.1">
-<h4 data-number="16.8.1" class="anchored" data-anchor-id="the-report-link"><span class="header-section-number">16.8.1</span> 1. The report link</h4>
+<section id="field-1-report-link" class="level4">
+<h4 class="anchored" data-anchor-id="field-1-report-link">Field 1: Report link</h4>
 <p>The link is stored as the “href” attribute of the first “a” element:</p>
-<div id="cell-71" class="cell" data-execution_count="17">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>row</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="17">
+<div id="cell-73" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>row</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="31">
 <pre><code>&lt;div class="inspectionUnit inspectionUnitEven transitionBackground" id="inspection_unit_0"&gt;&lt;a href="https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124"&gt;&lt;div class="inspectionUnitInner"&gt;&lt;div class="inspectionNameWrapper"&gt;&lt;div class="inspectionUnitName transitionAll"&gt;Bamba and Saduty Produce Market&lt;/div&gt;&lt;div class="inspectionUnitDate"&gt;&lt;span class="inspectionUnitDateTitle"&gt;Inspection date:&lt;/span&gt; Apr 18, 2024&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitInfoWrapper"&gt;&lt;div class="inspectionUnitAddress"&gt;4603 FRANKFORD AVE 19124&lt;/div&gt;&lt;div class="inspectionUnitNeigborhood"&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitCountWrapper"&gt;&lt;span class="inspectionCountLabel"&gt;Violations&lt;/span&gt;&lt;li class="inspectionUnitCount inspectionUnitCountFoodborne inspectionUnitCountFirst"&gt;&lt;span class="inspectionCountNumber"&gt;5&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Foodborne Illness Risk Factors&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="inspectionUnitCount inspectionUnitCountRetail"&gt;&lt;span class="inspectionCountNumber"&gt;10&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Lack of Good Retail Practices&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</code></pre>
 </div>
 </div>
-<div id="cell-72" class="cell" data-tags="[]" data-execution_count="18">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> row.select_one(<span class="st">"a"</span>)</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="18">
+<div id="cell-74" class="cell" data-tags="[]" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> row.select_one(<span class="st">"a"</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>&lt;a href="https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124"&gt;&lt;div class="inspectionUnitInner"&gt;&lt;div class="inspectionNameWrapper"&gt;&lt;div class="inspectionUnitName transitionAll"&gt;Bamba and Saduty Produce Market&lt;/div&gt;&lt;div class="inspectionUnitDate"&gt;&lt;span class="inspectionUnitDateTitle"&gt;Inspection date:&lt;/span&gt; Apr 18, 2024&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitInfoWrapper"&gt;&lt;div class="inspectionUnitAddress"&gt;4603 FRANKFORD AVE 19124&lt;/div&gt;&lt;div class="inspectionUnitNeigborhood"&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="inspectionUnitCountWrapper"&gt;&lt;span class="inspectionCountLabel"&gt;Violations&lt;/span&gt;&lt;li class="inspectionUnitCount inspectionUnitCountFoodborne inspectionUnitCountFirst"&gt;&lt;span class="inspectionCountNumber"&gt;5&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Foodborne Illness Risk Factors&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="inspectionUnitCount inspectionUnitCountRetail"&gt;&lt;span class="inspectionCountNumber"&gt;10&lt;/span&gt;&lt;span class="inspectionUnitInfoItemTitle"&gt;&lt;span class="inspectionUnitInfoItemTitleLabel"&gt;Lack of Good Retail Practices&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="clearAll"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;</code></pre>
 </div>
 </div>
 <p>Attributes can be extracted from the “attrs” attribute</p>
-<div id="cell-74" class="cell" data-tags="[]" data-execution_count="19">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>a.attrs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-76" class="cell" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>a.attrs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>{'href': 'https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124'}</code></pre>
 </div>
 </div>
-<div id="cell-75" class="cell" data-tags="[]" data-execution_count="20">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>link <span class="op">=</span> a.attrs[<span class="st">'href'</span>]</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>link</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="20">
+<div id="cell-77" class="cell" data-tags="[]" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>link <span class="op">=</span> a.attrs[<span class="st">'href'</span>]</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>link</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
 <pre><code>'https://data.inquirer.com/inspections/philly/?detail=Bamba%20and%20Saduty%20Produce%20Market|4603%20FRANKFORD%20AVE%2019124'</code></pre>
 </div>
 </div>
 </section>
-<section id="the-restaurant-name" class="level4" data-number="16.8.2">
-<h4 data-number="16.8.2" class="anchored" data-anchor-id="the-restaurant-name"><span class="header-section-number">16.8.2</span> 2. The restaurant name</h4>
+<section id="field-2-restaurant-name" class="level4">
+<h4 class="anchored" data-anchor-id="field-2-restaurant-name">Field 2: Restaurant name</h4>
 <p>Use the “inspectionUnitName” class name to identify the right element.</p>
 <p><img src="imgs/clean-plates-name.png" class="img-fluid"></p>
-<div id="cell-77" class="cell" data-tags="[]" data-execution_count="22">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the . to specify class name</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>name_tag <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitName"</span>)</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>name_tag</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="22">
+<div id="cell-79" class="cell" data-tags="[]" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the . to specify class name</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>name_tag <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitName"</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>name_tag</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
 <pre><code>&lt;div class="inspectionUnitName transitionAll"&gt;Bamba and Saduty Produce Market&lt;/div&gt;</code></pre>
 </div>
 </div>
-<div id="cell-78" class="cell" data-tags="[]" data-execution_count="23">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> name_tag.text</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="23">
+<div id="cell-80" class="cell" data-tags="[]" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> name_tag.text</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="35">
 <pre><code>'Bamba and Saduty Produce Market'</code></pre>
 </div>
 </div>
 </section>
-<section id="the-restaurant-address" class="level4" data-number="16.8.3">
-<h4 data-number="16.8.3" class="anchored" data-anchor-id="the-restaurant-address"><span class="header-section-number">16.8.3</span> 3. The restaurant address</h4>
+<section id="field-3-restaurant-address" class="level4">
+<h4 class="anchored" data-anchor-id="field-3-restaurant-address">Field 3: Restaurant address</h4>
 <p>Use the “inspectionUnitAddress” class name to identify the right element.</p>
 <p><img src="imgs/clean-plates-address.png" class="img-fluid"></p>
-<div id="cell-80" class="cell" data-tags="[]" data-execution_count="24">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the . to specify class name</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>addr_tag <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitAddress"</span>)</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>addr_tag</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="24">
+<div id="cell-82" class="cell" data-tags="[]" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the . to specify class name</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>addr_tag <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitAddress"</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>addr_tag</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="36">
 <pre><code>&lt;div class="inspectionUnitAddress"&gt;4603 FRANKFORD AVE 19124&lt;/div&gt;</code></pre>
 </div>
 </div>
-<div id="cell-81" class="cell" data-tags="[]" data-execution_count="25">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>address <span class="op">=</span> addr_tag.text</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>address</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="25">
+<div id="cell-83" class="cell" data-tags="[]" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>address <span class="op">=</span> addr_tag.text</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>address</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
 <pre><code>'4603 FRANKFORD AVE 19124'</code></pre>
 </div>
 </div>
 </section>
-<section id="the-number-of-food-borne-violations" class="level4" data-number="16.8.4">
-<h4 data-number="16.8.4" class="anchored" data-anchor-id="the-number-of-food-borne-violations"><span class="header-section-number">16.8.4</span> 4. The number of food-borne violations</h4>
+<section id="field-4-foodborne-violation-count" class="level4">
+<h4 class="anchored" data-anchor-id="field-4-foodborne-violation-count">Field 4: Foodborne violation count</h4>
 <p>It looks like the count number is within an element with class “inspectionCountNumber”. BUT: this class is repeated on the retail violations element as well as the food-borne violations element. So, we’ll need to use <em>nested</em> selectors</p>
 <p>First, select elements with the “inspectionUnitCountFoodborne” class name and then the “inspectionCountNumber” class name.</p>
 <p><img src="imgs/clean-plates-violations.png" class="img-fluid"></p>
-<div id="cell-83" class="cell" data-tags="[]" data-execution_count="51">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The number of foodborne violations</span></span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitCountFoodborne .inspectionCountNumber"</span>)</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(count.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="51">
+<div id="cell-85" class="cell" data-tags="[]" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The number of foodborne violations</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> row.select_one(<span class="st">".inspectionUnitCountFoodborne .inspectionCountNumber"</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(count.text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="38">
 <pre><code>5</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><strong>Caution:</strong></p>
 <p>If the violations count is zero, there won’t be any element that matches the above selector (the website instead uses a “inspectionUnitCountZero” class.</p>
 <p>If the element doesn’t exist, the <code>select_one()</code> function will return “None”</p>
-</div>
-</div>
+</blockquote>
 </section>
 </section>
-<section id="putting-it-all-together" class="level3" data-number="16.9">
-<h3 data-number="16.9" class="anchored" data-anchor-id="putting-it-all-together"><span class="header-section-number">16.9</span> Putting it all together</h3>
+<section id="step-6-build-a-dataframe" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-build-a-dataframe">Step 6: Build a DataFrame</h3>
 <p>Now, we can put this code into a for loop and extract out the content from every row on the page:</p>
-<div id="cell-86" class="cell" data-hide_input="false" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="52">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the data from each row</span></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> []</span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Get all rows</span></span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> soup.select(<span class="st">".inspectionUnit"</span>)</span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over all rows</span></span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> this_row <span class="kw">in</span> rows:</span>
-<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 2: Get the report link</span></span>
-<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note: we are using the "this_row" variable from the for loop</span></span>
-<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> this_row.select_one(<span class="st">"a"</span>)</span>
-<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> a.attrs[<span class="st">"href"</span>]</span>
-<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 3: Get the name</span></span>
-<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>    name_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitName"</span>)</span>
-<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> name_tag.text</span>
-<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 4: Get the name</span></span>
-<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>    addr_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitAddress"</span>)</span>
-<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a>    address <span class="op">=</span> addr_tag.text</span>
-<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 5: Get the violation count</span></span>
-<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a>    count_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitCountFoodborne .inspectionCountNumber"</span>)</span>
-<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># If there were no matches (None was returned), it means the count was zero</span></span>
-<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> count_tag <span class="kw">is</span> <span class="va">None</span>:</span>
-<span id="cb41-28"><a href="#cb41-28" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="bu">int</span>(count_tag.text)</span>
-<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-32"><a href="#cb41-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 6: Save it</span></span>
-<span id="cb41-33"><a href="#cb41-33" aria-hidden="true" tabindex="-1"></a>    data.append(</span>
-<span id="cb41-34"><a href="#cb41-34" aria-hidden="true" tabindex="-1"></a>        {</span>
-<span id="cb41-35"><a href="#cb41-35" aria-hidden="true" tabindex="-1"></a>            <span class="st">"name"</span>: name,</span>
-<span id="cb41-36"><a href="#cb41-36" aria-hidden="true" tabindex="-1"></a>            <span class="st">"address"</span>: address,</span>
-<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a>            <span class="st">"foodborne_count"</span>: count,</span>
-<span id="cb41-38"><a href="#cb41-38" aria-hidden="true" tabindex="-1"></a>            <span class="st">"url"</span>: url,</span>
-<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-88" class="cell" data-hide_input="false" data-slideshow="{&quot;slide_type&quot;:&quot;slide&quot;}" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the data from each row</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> []</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Get all rows</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> soup.select(<span class="st">".inspectionUnit"</span>)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over all rows</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> this_row <span class="kw">in</span> rows:</span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 2: Get the report link</span></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note: we are using the "this_row" variable from the for loop</span></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> this_row.select_one(<span class="st">"a"</span>)</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> a.attrs[<span class="st">"href"</span>]</span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 3: Get the name</span></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a>    name_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitName"</span>)</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a>    name <span class="op">=</span> name_tag.text</span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 4: Get the name</span></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>    addr_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitAddress"</span>)</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a>    address <span class="op">=</span> addr_tag.text</span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 5: Get the violation count</span></span>
+<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a>    count_tag <span class="op">=</span> this_row.select_one(<span class="st">".inspectionUnitCountFoodborne .inspectionCountNumber"</span>)</span>
+<span id="cb40-25"><a href="#cb40-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-26"><a href="#cb40-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># If there were no matches (None was returned), it means the count was zero</span></span>
+<span id="cb40-27"><a href="#cb40-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> count_tag <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb40-28"><a href="#cb40-28" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb40-29"><a href="#cb40-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb40-30"><a href="#cb40-30" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> <span class="bu">int</span>(count_tag.text)</span>
+<span id="cb40-31"><a href="#cb40-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-32"><a href="#cb40-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 6: Save it</span></span>
+<span id="cb40-33"><a href="#cb40-33" aria-hidden="true" tabindex="-1"></a>    data.append(</span>
+<span id="cb40-34"><a href="#cb40-34" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb40-35"><a href="#cb40-35" aria-hidden="true" tabindex="-1"></a>            <span class="st">"name"</span>: name,</span>
+<span id="cb40-36"><a href="#cb40-36" aria-hidden="true" tabindex="-1"></a>            <span class="st">"address"</span>: address,</span>
+<span id="cb40-37"><a href="#cb40-37" aria-hidden="true" tabindex="-1"></a>            <span class="st">"foodborne_count"</span>: count,</span>
+<span id="cb40-38"><a href="#cb40-38" aria-hidden="true" tabindex="-1"></a>            <span class="st">"url"</span>: url,</span>
+<span id="cb40-39"><a href="#cb40-39" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb40-40"><a href="#cb40-40" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb40-41"><a href="#cb40-41" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-87" class="cell" data-jupyter="{&quot;outputs_hidden&quot;:true}" data-tags="[]" data-execution_count="53">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="53">
+<div id="cell-89" class="cell" data-tags="[]" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="40">
 <pre><code>[{'name': 'Bamba and Saduty Produce Market',
   'address': '4603 FRANKFORD AVE 19124',
   'foodborne_count': 5,
@@ -5007,20 +4880,14 @@ Caution
   'url': 'https://data.inquirer.com/inspections/philly/?detail=Benny%20Peretti%27s|4320%20MAIN%20ST%2019127'}]</code></pre>
 </div>
 </div>
-<div id="cell-88" class="cell" data-tags="[]" data-execution_count="54">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a dataframe</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>scraped_df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-90" class="cell" data-tags="[]" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a dataframe</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>scraped_df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Sort by violation count:</p>
-<div id="cell-90" class="cell" data-tags="[]" data-execution_count="57">
-<details class="code-fold">
-<summary>Show Code</summary>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>scraped_df.sort_values(<span class="st">"foodborne_count"</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="57">
+<div id="cell-92" class="cell" data-tags="[]" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>scraped_df.sort_values(<span class="st">"foodborne_count"</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="42">
 <div>
 
 
@@ -5391,13 +5258,13 @@ Caution
 </div>
 </div>
 </div>
+<section id="discuss-the-results" class="level4">
+<h4 class="anchored" data-anchor-id="discuss-the-results">Discuss the results</h4>
 </section>
-<section id="see-any-restaurants-you-recognize" class="level3" data-number="16.10">
-<h3 data-number="16.10" class="anchored" data-anchor-id="see-any-restaurants-you-recognize"><span class="header-section-number">16.10</span> See any restaurants you recognize?</h3>
 </section>
 </section>
-<section id="thats-it" class="level2" data-number="17">
-<h2 data-number="17" class="anchored" data-anchor-id="thats-it"><span class="header-section-number">17</span> That’s it!</h2>
+<section id="wrap-up-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="wrap-up-and-next-steps">Wrap-up and next steps</h2>
 <p><strong>Next time:</strong> how to scrape dynamic content!</p>
 </section>
 
