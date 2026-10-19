@@ -45,8 +45,10 @@ const schedule = [
   },
   { w: 7, date: "10/8/26", topic: "Advanced geospatial analysis", 
     lab: [
-      {label: "6.1 Advanced geospatial analysis" /* href: `${base}labs/week-6-advanced-geospatial-analysis/week-6A-advanced-raster-analysis.html` */},
-      {label: "6.2 Zonal statistics" /* href: `${base}labs/week-6-advanced-geospatial-analysis/week-6B-spatial_fiona_shapely.html` */}
+      // {label: "6.1 Advanced geospatial analysis" /* href: `${base}labs/week-6-advanced-geospatial-analysis/week-6A-advanced-raster-analysis.html` */},
+      // {label: "6.1 Network analysis",  href: `${base}labs/week-6-advanced-geospatial-analysis/week-6B-spatial_fiona_shapely.html`}
+      {label: "6.1 Network analysis",  href: `${base}labs/week-8-network-analysis/week-8A-street-network.html`}
+
     ]
   },
   // { w: 8, date: "10/15/26", topic: "Network analysis", 
@@ -57,17 +59,17 @@ const schedule = [
   // },
   { w: 8, date: "10/15/26", topic: "Web Scraping", 
     lab: [
-      {label: "9.1 Web Scraping (I)" /* href: `${base}labs/week-9-web-scraping/lecture-9A.html` */},
-      {label: "9.2 Web Scraping (II)" /* href: `${base}labs/week-9-web-scraping/lecture-9B.html` */}
+      {label: "8.1 Web Scraping (I)", href: `${base}labs/week-9-web-scraping/lecture-9A.html` },
+      {label: "8.2 Web Scraping (II)", href: `${base}labs/week-9-web-scraping/lecture-9B.html` }
     ]
   },
-  { w: 10, date: "10/22/26", topic: "Web Scraping (II)", 
+  { w: 9, date: "10/22/26", topic: "Web Scraping (II)", 
     lab: [
-      {label: "10.1 Web APIs (I)" /* href: `${base}labs/week-10-web-api/lecture-10A.html` */},
-      {label: "10.2 Web APIs (II)" /* href: `${base}labs/week-10-web-api/lecture-10B.html` */}
+      {label: "9.1 Web APIs (I)", href: `${base}labs/week-10-web-api/lecture-10A.html` },
+      {label: "9.2 Web APIs (II)", href: `${base}labs/week-10-web-api/lecture-10B.html` }
     ]
   },
-    { w: 11, date: "10/29/26", topic: "Analyzing and Visualizing Large Datasets", 
+    { w: 10, date: "10/29/26", topic: "Analyzing and Visualizing Large Datasets", 
     lab: [
       {label: "10.1 Visualizing large datasets" /* href: `${base}labs/week-10-web-api/lecture-10A.html` */},
       {label: "10.2 LiDAR data processing" /* href: `${base}labs/week-10-web-api/lecture-10B.html` */}
