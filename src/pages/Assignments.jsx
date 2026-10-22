@@ -173,7 +173,7 @@ is available in this repository that will walk you through the steps of the assi
 ---
 In this assignment, we’ll explore restaurant review data available through the [Yelp Dataset Challenge](https://business.yelp.com/data/resources/open-dataset/).
  The dataset includes Yelp data for user reviews and business information for many metropolitan areas.
-  I’ve already downloaded this dataset (8 GB total!) and extracted out the data files for reviews 
+  Download the data and extract out the data files for reviews 
   and restaurants in Philadelphia. I’ve placed these data files into the data directory in this repository.
 
 **Analyzing correlations between restaurant reviews and census data**
